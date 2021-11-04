@@ -10,7 +10,8 @@
 .menu {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;  
+  
 }
 
 .menu__link__webstydio {
@@ -27,6 +28,9 @@
   margin-right: 0;
   width: 100%;
  
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: block;
+  }
   
 }
 
@@ -48,6 +52,10 @@
   border: none;
   border-radius: 50%;
   outline: none;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: block;
+  }
 }
 
 .menu-toggle:hover,
@@ -184,7 +192,7 @@ margin-top: 306px;
 }
 
 .btn__div {
-   
+   display: flex;
   justify-content: end;
   margin-left: 100px;
 }
